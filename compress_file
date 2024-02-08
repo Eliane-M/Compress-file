@@ -1,1 +1,45 @@
+#!/usr/bin/python3
 
+import os
+import shutil
+import tarfile
+from datetime import datetime
+
+def compress_folder(folder_path, compression_format):
+    current_date = datetime.now().strftime("%Y_%m_%d")
+    folder_name = os.path.basename(folder_path)
+    output_file = f"{folder_name}_{current_date}.{compression_format}"
+    
+    if compression_format == 'zip':
+        shutil.make_archive(output_file, 'zip', folder_path)
+    elif compression_format == 'tar':
+        shutil.make_archive(output_file, 'tar', folder_path)
+    elif compression_format == 'tgz':
+        with tarfile.open(output_file, "w:gz") as tar:
+            tar.add(folder_path, arcname=os.path.basename(folder_path))
+    else:
+        print("Unsupported compression format. Please choose 'zip', 'tar', or 'tgz'.")
+        return
+    
+    print(f"Compression successful! Compressed file saved as: {output_file}")
+
+if __name__ == "__main__":
+    folder_path = input("Enter the path of the folder you want to compress: ")
+    
+    if not os.path.isdir(folder_path):
+        print("Invalid folder path.")
+        exit()
+    
+    print("Available compression formats:")
+    print("1. zip")
+    print("2. tar")
+    print("3. tgz")
+    
+    compression_choice = input("Enter the number corresponding to the desired compression format: ")
+    compression_formats = {1: 'zip', 2: 'tar', 3: 'tgz'}
+    
+    try:
+        compression_format = compression_formats[int(compression_choice)]
+        compress_folder(folder_path, compression_format)
+    except (KeyError, ValueError):
+        print("Invalid compression format selection.")
