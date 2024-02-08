@@ -9,6 +9,8 @@ from datetime import datetime
 #Function to compress a folder
 def compress_folder(folder_path, compression_format):
     current_date = datetime.now().strftime("%Y_%m_%d")
+
+# Create the name for the compressed file based on the folder name and current date
     folder_name = os.path.basename(folder_path)
     output_file = f"{folder_name}_{current_date}.{compression_format}"
     
