@@ -4,7 +4,7 @@ This Python script allows users to compress files and folders into various compr
 
 How the Script Works:
 1. The script imports the os, shutil, and tarfile modules. os is used for interacting with the operating system, shutil for file operations and archiving, and tarfile for creating tar archives.
-2. It defines a function called compress_folder that takes two parameters: folder_path (the path of the folder to compress) and compression_format (the desired compression format, including 'zip', 'tar', and 'tgz').
+2. It defines a function called compress_folder that takes two parameters: folder_path (the path of the folder to compress) and compression_format (the desired compression format, including 'zip', 'tar', and 'tgz')
 3. Inside the function, it generates the current date and constructs the output file name based on the folder name and the current date if the compression format is 'tgz'.
 4. It then compresses the folder based on the selected compression format using appropriate methods from shutil or tarfile.
 5. If the compression format is not supported, it prints a message indicating that the compression format is unsupported.
