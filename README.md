@@ -18,4 +18,7 @@ How to Run the Script:
 4. Follow the on-screen instructions to select the folder to compress and choose the compression format.
 
 Group Members:
+1. 
+2. 
+3. John Akech  <j.akech@alustudent.com>
 
