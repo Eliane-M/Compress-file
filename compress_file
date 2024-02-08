@@ -29,5 +29,18 @@ if __name__ == "__main__":
     if not os.path.isdir(folder_path):
         print("Invalid folder path.")
         exit()
+
+    print("Available compression formats:")
+    print("1. zip")
+    print("2. tar")
+    print("3. tgz")
     
+    compression_choice = input("Enter the number corresponding to the desired compression format: ")
+    compression_formats = {1: 'zip', 2: 'tar', 3: 'tgz'}
+    
+    try:
+        compression_format = compression_formats[int(compression_choice)]
+        compress_folder(folder_path, compression_format)
+    except (KeyError, ValueError):
+        print("Invalid compression format selection.")
     
