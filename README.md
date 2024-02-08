@@ -17,9 +17,8 @@ How to Run the Script:
 3. Run the script by executing the "python compress.py" command in your terminal or command prompt.
 4. Follow the on-screen instructions to select the folder to compress and choose the compression format.
 
-Group Members:
-1. 
-2. Munezero Eliane <e.munezero@alustudent.com>
-3. John Akech  <j.akech@alustudent.com>
-4. Ange Mukundente <a.mukundent@alustudent.com>
-5. Samuel Dushime <s.dushime@alustudent.com>
+Group Members: 
+1. Munezero Eliane <e.munezero@alustudent.com>
+2. John Akech  <j.akech@alustudent.com>
+3. Ange Mukundente <a.mukundent@alustudent.com>
+4. Samuel Dushime <s.dushime@alustudent.com>
