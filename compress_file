@@ -6,6 +6,7 @@ import shutil
 import tarfile
 from datetime import datetime
 
+#Function to compress a folder
 def compress_folder(folder_path, compression_format):
     current_date = datetime.now().strftime("%Y_%m_%d")
     folder_name = os.path.basename(folder_path)
