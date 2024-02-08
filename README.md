@@ -1,4 +1,4 @@
-FILE COMPRESSION SCRIPT
+useFILE COMPRESSION SCRIPT
 
 This Python script allows users to compress files and folders into various compressed file formats such as zip, tar, and tgz. It provides a user-friendly interface to select the folder to compress and the desired compression format.
 
@@ -22,3 +22,5 @@ Group Members:
 2. John Akech  <j.akech@alustudent.com>
 3. Ange Mukundente <a.mukundent@alustudent.com>
 4. Samuel Dushime <s.dushime@alustudent.com>
+5. Kangabire Muhoza Merveille
+<m.kangabire@alustudent.com>
